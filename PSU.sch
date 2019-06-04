@@ -7182,10 +7182,6 @@ Based on  the following source:
 <part name="D1" library="diode" deviceset="BAS70" device="" value="CMPSH1-4"/>
 <part name="D2" library="diode" deviceset="BAS70" device="" value="CMPSH1-4"/>
 <part name="D3" library="diode" deviceset="BAS70" device="" value="CMPSH1-4"/>
-<part name="U$1" library="DO11608C" deviceset="DO1608C" device=""/>
-<part name="U$2" library="DO11608C" deviceset="DO1608C" device=""/>
-<part name="U$3" library="DO11608C" deviceset="DO1608C" device=""/>
-<part name="U$4" library="DO11608C" deviceset="DO1608C" device=""/>
 <part name="U$5" library="inductor-coilcraft" deviceset="MSS1260" device="" value="DO1608C-103"/>
 <part name="R1" library="rcl-2" deviceset="R-EU_" device="0309/10"/>
 <part name="R2" library="rcl-2" deviceset="R-EU_" device="0309/10"/>
@@ -7345,7 +7341,6 @@ Based on  the following source:
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <junction x="71.12" y="43.18"/>
-<pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="45.72" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
