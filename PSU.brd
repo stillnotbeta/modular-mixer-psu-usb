@@ -3,7 +3,7 @@
 <eagle version="9.3.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.2" altunitdist="mm" altunit="mm"/>
@@ -96,8 +96,8 @@
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -183,11 +183,20 @@ R Bus
 PGND
 +12V
 -12V</text>
-<text x="86" y="2" size="1.27" layer="121" rot="R90">USB powered power supply
-V1.0 Max 50mA per chanel
+<text x="92" y="32" size="1.778" layer="122" rot="MR0">Stillnotbeta modular mixer
+USB powered power supply V1.1
+https://github.com/stillnotbeta/modular-mixer-psu-usb</text>
+<text x="14" y="48" size="1.778" layer="122" rot="MR270">(c) Carlos Rödiger / Stillnotbeta
 prebuild version: assembled in Hanover
-(c) Carlos Rödiger / Stillnotbeta
-https://github.com/stillnotbeta/USB-powered-power-supply</text>
+Max 50mA per chanel
+
+</text>
+<polygon width="0.1524" layer="121">
+<vertex x="44" y="50"/>
+<vertex x="56" y="50"/>
+<vertex x="56" y="34"/>
+<vertex x="44" y="34"/>
+</polygon>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -1584,46 +1593,6 @@ Based on  the following source:
 </package3d>
 </packages3d>
 </library>
-<library name="logo" urn="urn:adsk.eagle:library:264">
-<description>&lt;b&gt;Electronic and CadSoft EAGLE logos&lt;/b&gt;&lt;p&gt;</description>
-<packages>
-<package name="MUELLTONNE_10.00" urn="urn:adsk.eagle:footprint:16915/1" library_version="1">
-<description>&lt;b&gt;Logo trash / Mülltonne 10 mm&lt;/b&gt;</description>
-<wire x1="0.915" y1="0.4991" x2="10.4804" y2="10.3141" width="0.1664" layer="21"/>
-<wire x1="0.6654" y1="10.2309" x2="9.815" y2="0.4159" width="0.1664" layer="21"/>
-<wire x1="6.4047" y1="1.8299" x2="4.1589" y2="1.8299" width="0.1664" layer="21"/>
-<wire x1="4.1589" y1="1.8299" x2="3.9094" y2="2.0795" width="0.1664" layer="21" curve="-89.97705"/>
-<wire x1="3.9094" y1="2.0795" x2="3.4103" y2="8.4842" width="0.1664" layer="21"/>
-<wire x1="3.4103" y1="8.4842" x2="3.4103" y2="8.6505" width="0.1664" layer="21"/>
-<wire x1="3.4103" y1="8.6505" x2="3.6598" y2="9.1496" width="0.1664" layer="21" curve="-53.125511"/>
-<wire x1="3.6598" y1="9.1496" x2="4.0757" y2="9.3159" width="0.1664" layer="21" curve="-30.138307"/>
-<wire x1="4.0757" y1="9.3159" x2="5.157" y2="9.3991" width="0.1664" layer="21" curve="-4.66621"/>
-<wire x1="5.157" y1="9.3991" x2="5.157" y2="9.5655" width="0.1664" layer="21"/>
-<wire x1="5.157" y1="9.5655" x2="6.2384" y2="9.5655" width="0.1664" layer="21"/>
-<wire x1="6.2384" y1="9.5655" x2="6.2384" y2="9.2328" width="0.1664" layer="21"/>
-<wire x1="6.2384" y1="9.2328" x2="5.157" y2="9.2328" width="0.1664" layer="21"/>
-<wire x1="5.157" y1="9.2328" x2="5.157" y2="9.3991" width="0.1664" layer="21"/>
-<wire x1="6.3215" y1="9.3991" x2="6.4047" y2="9.3991" width="0.1664" layer="21"/>
-<wire x1="6.4047" y1="9.3991" x2="7.1533" y2="9.3159" width="0.1664" layer="21" curve="-12.680383"/>
-<wire x1="7.1533" y1="9.3159" x2="7.6524" y2="8.9832" width="0.1664" layer="21" curve="-42.008846"/>
-<wire x1="7.6524" y1="8.9832" x2="7.7356" y2="8.7337" width="0.1664" layer="21" curve="-33.738056"/>
-<wire x1="7.7356" y1="8.7337" x2="7.3197" y2="3.1608" width="0.1664" layer="21"/>
-<wire x1="7.7148" y1="7.0701" x2="8.2346" y2="7.0701" width="0.1664" layer="21"/>
-<wire x1="8.2346" y1="7.0701" x2="8.2346" y2="7.9227" width="0.1664" layer="21"/>
-<wire x1="8.2346" y1="7.9227" x2="7.7564" y2="7.9227" width="0.1664" layer="21"/>
-<wire x1="3.9925" y1="8.6505" x2="3.951" y2="9.3991" width="0.1664" layer="21"/>
-<wire x1="3.951" y1="9.3991" x2="4.1173" y2="9.3991" width="0.1664" layer="21" curve="-192.62744"/>
-<wire x1="4.1173" y1="9.3991" x2="4.0757" y2="8.6505" width="0.1664" layer="21"/>
-<wire x1="4.0757" y1="8.6505" x2="3.9925" y2="8.6505" width="0.1664" layer="21"/>
-<circle x="7.2365" y="2.1002" radius="0.7497" width="0.1664" layer="21"/>
-<circle x="8.1099" y="8.7753" radius="0.3743" width="0.1664" layer="21"/>
-<circle x="7.2365" y="2.1002" radius="0.4159" width="0.1664" layer="21"/>
-<rectangle x1="2.8696" y1="8.4218" x2="7.7564" y2="8.7753" layer="21"/>
-<rectangle x1="5.0323" y1="6.4463" x2="6.7166" y2="7.0285" layer="21"/>
-<rectangle x1="3.9925" y1="1.2685" x2="4.5748" y2="1.8299" layer="21"/>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1904,7 +1873,6 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="unknown" x="50" y="40" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="42.38" y="48.89" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="U$6" library="logo" library_urn="urn:adsk.eagle:library:264" package="MUELLTONNE_10.00" value="" x="6" y="36" smashed="yes"/>
 </elements>
 <signals>
 <signal name="N$1">
